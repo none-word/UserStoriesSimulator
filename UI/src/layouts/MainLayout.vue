@@ -1,7 +1,7 @@
 <template>
-  <q-layout view="hHh lpR fff" class="fullscreen">
+  <q-layout view="hHh lpR fff">
     <app-header/>
-    <q-page-container class="full-height column">
+    <q-page-container class="">
       <router-view class="col" style="min-height: inherit"/>
     </q-page-container>
     <app-footer/>

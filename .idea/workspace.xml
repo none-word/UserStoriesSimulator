@@ -19,20 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8128b5c-2263-413c-a1b5-de41d9c45b80" name="Default Changelist" comment="initialized project">
-      <change afterPath="$PROJECT_DIR$/UI/src/components/AppFooter.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/src/components/AppHeader.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/src/components/UserStoryCard.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/src/pages/Editor.vue" afterDir="false" />
+    <list default="true" id="c8128b5c-2263-413c-a1b5-de41d9c45b80" name="Default Changelist" comment="Markup layout and cards">
+      <change afterPath="$PROJECT_DIR$/UI/src/components/ResetSolutionButton.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UI/src/components/ShowSolutionButton.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UI/src/components/UserStoryCard/UserStoryCard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UI/src/components/UserStoryCard/UserStoryCardOptions.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/src/assets/quasar-logo-vertical.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/src/components/EssentialLink.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/src/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/css/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/src/components/AppFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/components/AppFooter.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/src/components/AppHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/components/AppHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/src/components/UserStoryCard.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/UI/src/layouts/MainLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/layouts/MainLayout.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/src/pages/Error404.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/src/pages/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/pages/Index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/src/router/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/router/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/src/pages/Editor.vue" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/pages/Editor.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +59,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Evgeny\WebstormProjects\Vue\UserStoriesSimulator\UI\src\components\UserStoryCard" />
       <recent name="C:\Users\Evgeny\WebstormProjects\Vue\UserStoriesSimulator\UI\src\pages" />
     </key>
   </component>
@@ -73,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1646058089740</updated>
-      <workItem from="1646058090965" duration="8830000" />
+      <workItem from="1646058090965" duration="13588000" />
     </task>
     <task id="LOCAL-00001" summary="initialized project">
       <created>1646058463381</created>
@@ -82,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646058463381</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Markup layout and cards">
+      <created>1646083317151</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1646083317151</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,7 +106,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initialized project" />
-    <option name="LAST_COMMIT_MESSAGE" value="initialized project" />
+    <MESSAGE value="Markup layout and cards" />
+    <option name="LAST_COMMIT_MESSAGE" value="Markup layout and cards" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1646059187067">
@@ -112,10 +118,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1646058470328" />
-    <state x="2459" y="183" width="840" height="856" key="search.everywhere.popup" timestamp="1646080006920">
+    <state x="2587" y="253" width="585" height="534" key="find.popup" timestamp="1646087228481">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2459" y="183" width="840" height="856" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1646080006920" />
+    <state x="2587" y="253" width="585" height="534" key="find.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1646087228481" />
+    <state x="2459" y="183" width="840" height="856" key="search.everywhere.popup" timestamp="1646087312688">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2459" y="183" width="840" height="856" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1646087312688" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1646058645422" />
   </component>
 </project>

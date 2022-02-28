@@ -16,6 +16,6 @@ export default {
 
 <style scoped>
 .app-footer {
-  background-color: #aab8c2;
+  background-color: #00273f;
 }
 </style>

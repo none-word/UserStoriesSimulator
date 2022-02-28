@@ -1,21 +1,25 @@
 <template>
   <div class="row editor">
-    <div class="col-6 q-pa-lg editor-sections-container">
-      <div v-for="section of sections" :key="section.deep" class="editor-section-row q-mb-md q-gutter-sm">
-        <user-story-card :cardBackground="section.indicator"/>
+    <div class="col-6 q-pa-lg editor-sections-container q-gutter-lg">
+      <div v-for="section of sections" :key="section.deep" class="editor-section-row q-gutter-sm">
         <user-story-card :cardBackground="section.indicator"/>
         <user-story-card :cardBackground="section.indicator"/>
         <user-story-card :cardBackground="section.indicator"/>
       </div>
     </div>
-    <div class="col-6 q-pa-lg">
-      ddd
+    <q-separator vertical/>
+    <div class="col-6 q-pa-lg editor-sections-container q-gutter-lg">
+      <div v-for="section of sections" :key="section.deep" class="editor-section-row q-gutter-sm">
+        <user-story-card :cardBackground="section.indicator" :story-hidden="section.hidden"/>
+        <user-story-card :cardBackground="section.indicator" :story-hidden="section.hidden"/>
+        <user-story-card :cardBackground="section.indicator" :story-hidden="section.hidden"/>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import UserStoryCard from "components/UserStoryCard";
+import UserStoryCard from "components/UserStoryCard/UserStoryCard";
 
 export default {
   name: "Editor",
@@ -23,10 +27,10 @@ export default {
   data() {
     return {
       sections: [
-        {deep: 0, name: 'first', indicator: '115740'},
-        {deep: 1, name: 'second', indicator: '16a085'},
-        {deep: 2, name: 'third', indicator: '00363d'},
-        {deep: 3, name: 'fourth', indicator: '1c2d37'},
+        {deep: 0, name: 'first', indicator: '115740', hidden: true, children: []},
+        {deep: 1, name: 'second', indicator: '31577a', hidden: true, children: []},
+        {deep: 2, name: 'third', indicator: '00363d', hidden: true, children: []},
+        {deep: 3, name: 'fourth', indicator: '1c2d37', hidden: true, children: []},
       ]
     }
   }
@@ -39,20 +43,16 @@ export default {
   border-right: 1px solid $grey-4;
 }
 
-.editor-sections-container div {
-  border-bottom: 1px solid $grey-4;
-}
-
 .editor > div {
   height: 100%;
   overflow-y: auto
 }
 
 .editor-section-row {
-  height: 200px;
+  min-height: 200px;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   overflow-x: auto;
 }
 </style>
