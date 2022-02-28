@@ -1,1 +1,14 @@
 // app global css in SCSS form
+::-webkit-scrollbar {
+  width: 0.4em;
+  height: 0.4em;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #006570;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+}
