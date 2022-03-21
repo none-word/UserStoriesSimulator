@@ -3,7 +3,7 @@
     <q-list class="text-grey-8">
       <q-item clickable v-close-popup dense>
         <q-item-section>
-          <q-item-label>Divide</q-item-label>
+          <q-item-label>Split</q-item-label>
         </q-item-section>
       </q-item>
 

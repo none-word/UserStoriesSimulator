@@ -12,11 +12,7 @@
       </div>
     </q-toolbar>
     <div class="row full-width app-header-options items-center justify-between">
-      <q-tabs align="left" no-caps>
-        <q-route-tab to="/page1" label="Exercise 1"/>
-        <q-route-tab to="/page2" label="Exercise 2"/>
-        <q-route-tab to="/page3" label="Exercise 3"/>
-      </q-tabs>
+      <Navbar/>
       <div class="row q-gutter-sm q-mr-sm">
         <div>
           <reset-solution-button/>
@@ -34,10 +30,11 @@
 import university_logo from '../assets/imgs/UI_LOGO.png'
 import ResetSolutionButton from "components/ResetSolutionButton";
 import ShowSolutionButton from "components/ShowSolutionButton";
+import Navbar from "components/Navbar";
 
 export default {
   name: "AppHeader",
-  components: {ShowSolutionButton, ResetSolutionButton}
+  components: {Navbar, ShowSolutionButton, ResetSolutionButton}
 }
 </script>
 
