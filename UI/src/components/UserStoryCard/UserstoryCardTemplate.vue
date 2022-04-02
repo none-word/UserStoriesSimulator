@@ -1,6 +1,6 @@
 <template>
   <q-card class="column justify-around"
-          :style="{'background-color':'#'+background, 'color':'white', 'max-width': '100%'}"
+          :style="{'background-color':'#'+background, 'min-width':'400px', 'color':'white', 'max-width': '100%'}"
   >
     <q-card-section>
       <div class="text-subtitle1 text-weight-bold q-mb-sm" style="color: #e4e4e4">

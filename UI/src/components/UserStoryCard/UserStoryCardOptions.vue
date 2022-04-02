@@ -3,7 +3,7 @@
     <q-list class="text-grey-8">
       <q-item clickable v-close-popup dense>
         <q-item-section>
-          <q-item-label>Split</q-item-label>
+          <q-item-label @click="$emit('onSplitUserStory')">Split</q-item-label>
         </q-item-section>
       </q-item>
 
@@ -24,7 +24,7 @@
 
 <script>
 export default {
-name: "UserStoryCardOptions"
+  name: "UserStoryCardOptions",
 }
 </script>
 

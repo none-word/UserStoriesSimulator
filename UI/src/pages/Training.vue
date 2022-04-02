@@ -6,9 +6,12 @@
         <UserStoryUserCard
             v-for="card of section"
             :key="card.id"
+            :id="card.id"
             :title="card.title"
             :body="card.body"
             :background="sectionsColors[sectionIdx-1].indicator"
+            @onSplitUserStory="splitUserStory({exercise:$route.params.id, cardId:card.id})"
+            @onChangeContent="editUserStory({exercise:$route.params.id , cardId: card.id, $event})"
         />
       </div>
     </div>
@@ -78,7 +81,9 @@ export default {
     ...mapMutations({
       openUserStoryCard: 'openUserStoryCard',
       closeUserStoryCard: 'closeUserStoryCard',
-      setStarting: 'setStarting'
+      setStarting: 'setStarting',
+      splitUserStory: 'splitUserStory',
+      editUserStory: 'editUserStory',
     }),
   },
   watch: {

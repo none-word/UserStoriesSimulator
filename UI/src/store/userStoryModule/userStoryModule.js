@@ -88,25 +88,27 @@ export default {
             // console.log(exercise)
             state.currentUserStories = JSON.parse(JSON.stringify(state.userStories[exercise]))
             state.currentUserStories.children = []
-            
-            // state.currentUserStories.children.push( //test
-            //     {
-            //         id: 10,
-            //         hidden: true,
-            //         title: 'Child User Story 1.1',
-            //         body: 'The text of the child user story',
-            //         children: []
-            //     }
-            // )
-            // state.currentUserStories.children.push(
-            //     {
-            //         id: 11,
-            //         hidden: true,
-            //         title: 'Child User Story 1.1',
-            //         body: 'The text of the child user story',
-            //         children: []
-            //     }
-            // )
+        },
+        splitUserStory(state, {exercise, cardId}) {
+            const userStory = findUserStoryById(state.currentUserStories, cardId)
+            userStory.children.push({
+                id: Date.now(),
+                hidden: true,
+                title: 'Title',
+                body: 'Text',
+                children: []
+            }, {
+                id: Date.now() + 1,
+                hidden: true,
+                title: 'Title',
+                body: 'Text',
+                children: []
+            })
+        },
+        editUserStory(state, {exercise, cardId, $event}) {
+            const userStory = findUserStoryById(state.currentUserStories, cardId)
+            userStory.title = $event.newTitle
+            userStory.body = $event.newBody
         }
     },
     getters: {

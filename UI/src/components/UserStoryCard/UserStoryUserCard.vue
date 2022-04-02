@@ -1,19 +1,52 @@
 <template>
   <UserstoryCardTemplate :background="background">
     <template v-slot:title>
-      {{ title }}
+      <q-input dense dark v-if="editMode" v-model="newTitle" color="white"/>
+      <div v-else>{{ title }}</div>
     </template>
     <template v-slot:body>
-      <div>{{ body }}</div>
+      <q-input
+          v-if="editMode"
+          type="textarea"
+          dense
+          class="full-width"
+          dark
+          v-model="newBody"
+          color="white"
+      />
+      <div v-else>{{ body }}</div>
     </template>
     <template v-slot:options>
       <div v-if="!root" class="row full-width justify-between">
         <div>
-          <q-btn icon="delete" size="sm" flat no-caps style="color: #FF7F7F"/>
-          <q-btn icon="edit" size="sm" flat no-caps style="color: #a5cfd5"/>
+          <q-btn
+              icon="delete"
+              size="sm"
+              flat
+              no-caps
+              style="color: #FF7F7F"
+          />
+          <q-btn
+              v-if="!editMode"
+              icon="edit"
+              size="sm" flat
+              no-caps
+              style="color: #a5cfd5"
+              @click="editMode=true"
+          />
+          <q-btn
+              v-else
+              icon="done"
+              size="sm" flat
+              no-caps
+              style="color: #a5cfd5"
+              @click="changeContent"
+          />
         </div>
         <div>
-          <UserStoryCardOptions/>
+          <UserStoryCardOptions
+              @onSplitUserStory="$emit('onSplitUserStory')"
+          />
         </div>
       </div>
     </template>
@@ -23,14 +56,33 @@
 <script>
 import UserstoryCardTemplate from "components/UserStoryCard/UserstoryCardTemplate";
 import UserStoryCardOptions from "components/UserStoryCard/UserStoryCardOptions";
+import {mapMutations} from "vuex";
+
 export default {
   name: "UserStoryUserCard",
   components: {UserStoryCardOptions, UserstoryCardTemplate},
+  data() {
+    return {
+      editMode: false,
+      newTitle: this.title,
+      newBody: this.body
+    }
+  },
   props: {
     title: String,
     body: String,
     background: String,
-    root: Boolean
+    root: Boolean,
+    id: Number
+  },
+  methods: {
+    changeContent() {
+      this.$emit('onChangeContent', {newTitle: this.newTitle, newBody: this.newBody})
+      this.editMode = false
+    }
+  },
+  destroyed() {
+    this.editMode = false
   },
 }
 </script>

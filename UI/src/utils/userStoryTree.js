@@ -39,7 +39,6 @@ const traverseUserTree = (currentNode, section) => {
 
 
 export const findUserStoryById = (currentNode, userStoryId) => {
-    
     if (currentNode.id === userStoryId) {
         return currentNode
     } else if (currentNode.children !== null) {
