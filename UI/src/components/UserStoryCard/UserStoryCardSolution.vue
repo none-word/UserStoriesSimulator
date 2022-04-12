@@ -1,7 +1,12 @@
 <template>
   <UserstoryCardTemplate :hidden="hidden" :background="background">
     <template v-slot:title>
-      <div>{{ title }}</div>
+      <div v-if="!hidden">{{ title }}</div>
+      <div v-else>Title hidden</div>
+    </template>
+    <template v-slot:cost>
+      <div v-if="!hidden">Cost: {{ cost }}</div>
+      <div v-else>Cost hidden</div>
     </template>
     <template v-slot:body>
       <div v-if="!hidden">{{ body }}</div>
@@ -45,7 +50,8 @@ export default {
     body: String,
     hidden: Boolean,
     background: String,
-    root: Boolean
+    root: Boolean,
+    cost: Number,
   },
   methods: {
     showCard() {

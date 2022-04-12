@@ -23,6 +23,7 @@ export default {
         },
         splitUserStory(state, {exercise, cardId}) {
             const userStory = findUserStoryById(state.currentUserStories, cardId)
+            console.log(userStory)
             userStory.children.push({
                 id: Date.now(),
                 hidden: true,
@@ -38,10 +39,16 @@ export default {
             })
         },
         editUserStory(state, {exercise, cardId, $event}) {
+            console.log(exercise)
             const userStory = findUserStoryById(state.currentUserStories, cardId)
             userStory.title = $event.newTitle
             userStory.body = $event.newBody
-        }
+            userStory.cost = $event.newCost
+            
+        },
+        deleteUserStory(state, {exercise, cardId}) {
+            // deleteUserStoryById(state.currentUserStories, cardId)
+        },
     },
     getters: {
         userStoriesList(state) {

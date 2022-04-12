@@ -23,7 +23,7 @@ const traverseTree = (currentNode, treeListLen, section) => {
 
 export const getUserTreeList = (rootUserStory) => {
     userTreeList = []
-    traverseUserTree(rootUserStory, rootUserStory.section+1)
+    traverseUserTree(rootUserStory, rootUserStory.section + 1)
     return userTreeList
 }
 
@@ -32,7 +32,7 @@ const traverseUserTree = (currentNode, section) => {
         userTreeList.push(currentNode)
         for (let childNode of currentNode.children) {
             childNode.section = section
-            traverseUserTree(childNode, childNode.section+1)
+            traverseUserTree(childNode, childNode.section + 1)
         }
     }
 }
@@ -40,13 +40,15 @@ const traverseUserTree = (currentNode, section) => {
 
 export const findUserStoryById = (currentNode, userStoryId) => {
     if (currentNode.id === userStoryId) {
+        console.log('RETURN', currentNode)
         return currentNode
     } else if (currentNode.children !== null) {
-        let result = null
-        for (let i = 0; result === null && i < currentNode.children.length; i++) {
-            result = findUserStoryById(currentNode.children[i], userStoryId)
+        let userStory = null
+        for (let i = 0; userStory === null && i < currentNode.children.length; i++) {
+            userStory = findUserStoryById(currentNode.children[i], userStoryId)
         }
-        return result
+        return userStory
     }
     return null
 }
+

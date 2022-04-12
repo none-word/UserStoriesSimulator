@@ -4,6 +4,10 @@
       <q-input dense dark v-if="editMode" v-model="newTitle" color="white"/>
       <div v-else>{{ title }}</div>
     </template>
+    <template v-slot:cost>
+      <q-input type="number" dense dark v-if="editMode" label="Cost" v-model="newCost" color="white"/>
+      <div v-else>Cost: {{ cost }}</div>
+    </template>
     <template v-slot:body>
       <q-input
           v-if="editMode"
@@ -25,6 +29,7 @@
               flat
               no-caps
               style="color: #FF7F7F"
+              @click="$emit('onDeleteUserStory')"
           />
           <q-btn
               v-if="!editMode"
@@ -65,7 +70,8 @@ export default {
     return {
       editMode: false,
       newTitle: this.title,
-      newBody: this.body
+      newBody: this.body,
+      newCost: this.cost,
     }
   },
   props: {
@@ -73,11 +79,12 @@ export default {
     body: String,
     background: String,
     root: Boolean,
-    id: Number
+    id: Number,
+    cost: Number,
   },
   methods: {
     changeContent() {
-      this.$emit('onChangeContent', {newTitle: this.newTitle, newBody: this.newBody})
+      this.$emit('onChangeContent', {newTitle: this.newTitle, newBody: this.newBody, newCost: +this.newCost})
       this.editMode = false
     }
   },

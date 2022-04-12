@@ -9,9 +9,11 @@
             :id="card.id"
             :title="card.title"
             :body="card.body"
+            :cost="card.cost"
             :background="sectionsColors[sectionIdx-1].indicator"
             @onSplitUserStory="splitUserStory({exercise:$route.params.id, cardId:card.id})"
             @onChangeContent="editUserStory({exercise:$route.params.id , cardId: card.id, $event})"
+            @onDeleteUserStory="deleteUserStory({exercise:$route.params.id , cardId: card.id, $event})"
         />
       </div>
     </div>
@@ -25,6 +27,7 @@
             :body="card.body"
             :root="sectionIdx ==='1'"
             :hidden="card.hidden"
+            :cost="card.cost"
             :background="sectionsColors[sectionIdx-1].indicator"
             @show-card="openUserStoryCard({exercise:$route.params.id,cardId:card.id})"
             @close-card="closeUserStoryCard({exercise:$route.params.id,cardId:card.id})"
@@ -84,6 +87,7 @@ export default {
       setStarting: 'setStarting',
       splitUserStory: 'splitUserStory',
       editUserStory: 'editUserStory',
+      deleteUserStory: 'deleteUserStory'
     }),
   },
   watch: {

@@ -19,13 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8128b5c-2263-413c-a1b5-de41d9c45b80" name="Default Changelist" comment="Markup layout and cards">
+    <list default="true" id="c8128b5c-2263-413c-a1b5-de41d9c45b80" name="Default Changelist" comment="add api  userStoriesStorageService.js">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/src/components/UserStoryCard/UserStoryCardOptions.vue" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/components/UserStoryCard/UserStoryCardOptions.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/src/components/UserStoryCard/UserStoryCardSolution.vue" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/components/UserStoryCard/UserStoryCardSolution.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI/src/components/UserStoryCard/UserStoryUserCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/components/UserStoryCard/UserStoryUserCard.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI/src/components/UserStoryCard/UserstoryCardTemplate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/components/UserStoryCard/UserstoryCardTemplate.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI/src/pages/Training.vue" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/pages/Training.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI/src/store/userStoryModule/userStoryModule.js" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/store/userStoryModule/userStoryModule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/src/userStoriesStorageService.js" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/userStoriesStorageService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI/src/utils/userStoryTree.js" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/utils/userStoryTree.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,8 +37,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -61,7 +62,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../rcun-web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../sge_dev" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -83,7 +84,7 @@
       <workItem from="1647177389565" duration="25506000" />
       <workItem from="1647431505937" duration="3624000" />
       <workItem from="1647879500838" duration="679000" />
-      <workItem from="1648732109935" duration="9136000" />
+      <workItem from="1648732109935" duration="18506000" />
     </task>
     <task id="LOCAL-00001" summary="initialized project">
       <created>1646058463381</created>
@@ -106,7 +107,21 @@
       <option name="project" value="LOCAL" />
       <updated>1647879579210</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="splitting and editing user story">
+      <created>1648896739699</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1648896739699</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add api  userStoriesStorageService.js">
+      <created>1649066130071</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1649066130072</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +142,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initialized project" />
     <MESSAGE value="Markup layout and cards" />
-    <option name="LAST_COMMIT_MESSAGE" value="Markup layout and cards" />
+    <MESSAGE value="splitting and editing user story" />
+    <MESSAGE value="add api  userStoriesStorageService.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="add api  userStoriesStorageService.js" />
   </component>
 </project>
