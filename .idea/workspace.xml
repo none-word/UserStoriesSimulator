@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,8 +22,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8128b5c-2263-413c-a1b5-de41d9c45b80" name="Default Changelist" comment="add api  userStoriesStorageService.js">
+    <list default="true" id="c8128b5c-2263-413c-a1b5-de41d9c45b80" name="Default Changelist" comment="Markup layout and cards">
+      <change afterPath="$PROJECT_DIR$/UI/src/store/userStoriesModule.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UI/src/utils/utils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/UI/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/UI/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/src/components/ResetSolutionButton.vue" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/components/ResetSolutionButton.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/src/components/ShowSolutionButton.vue" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/components/ShowSolutionButton.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/src/components/UserStoryCard/UserStoryCardOptions.vue" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/components/UserStoryCard/UserStoryCardOptions.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI/src/components/UserStoryCard/UserStoryCardSolution.vue" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/components/UserStoryCard/UserStoryCardSolution.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI/src/components/UserStoryCard/UserStoryUserCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/components/UserStoryCard/UserStoryUserCard.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI/src/components/UserStoryCard/UserstoryCardTemplate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/components/UserStoryCard/UserstoryCardTemplate.vue" afterDir="false" />
@@ -44,6 +54,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -145,5 +156,19 @@
     <MESSAGE value="splitting and editing user story" />
     <MESSAGE value="add api  userStoriesStorageService.js" />
     <option name="LAST_COMMIT_MESSAGE" value="add api  userStoriesStorageService.js" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1650301312628">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1650301312628" />
+    <state x="478" y="145" width="579" height="534" key="find.popup" timestamp="1650306420058">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="478" y="145" width="579" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1650306420058" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1650307536770">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1650307536770" />
   </component>
 </project>

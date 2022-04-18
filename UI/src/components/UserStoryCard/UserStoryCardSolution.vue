@@ -51,7 +51,7 @@ export default {
     hidden: Boolean,
     background: String,
     root: Boolean,
-    cost: Number,
+    cost: String,
   },
   methods: {
     showCard() {

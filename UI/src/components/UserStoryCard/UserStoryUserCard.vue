@@ -5,7 +5,7 @@
       <div v-else>{{ title }}</div>
     </template>
     <template v-slot:cost>
-      <q-input type="number" dense dark v-if="editMode" label="Cost" v-model="newCost" color="white"/>
+      <q-input dense dark v-if="editMode" label="Cost" v-model="newCost" color="white"/>
       <div v-else>Cost: {{ cost }}</div>
     </template>
     <template v-slot:body>
@@ -51,6 +51,7 @@
         <div>
           <UserStoryCardOptions
               @onSplitUserStory="$emit('onSplitUserStory')"
+              @onDeleteUserStories="$emit('onDeleteUserStories')"
           />
         </div>
       </div>
@@ -79,12 +80,12 @@ export default {
     body: String,
     background: String,
     root: Boolean,
-    id: Number,
-    cost: Number,
+    id: String,
+    cost: String,
   },
   methods: {
     changeContent() {
-      this.$emit('onChangeContent', {newTitle: this.newTitle, newBody: this.newBody, newCost: +this.newCost})
+      this.$emit('onChangeContent', {newTitle: this.newTitle, newBody: this.newBody, newCost: this.newCost})
       this.editMode = false
     }
   },

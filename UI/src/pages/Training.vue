@@ -2,7 +2,9 @@
   <div class="row editor">
     <div class="col-6 q-pa-lg editor-sections-container q-gutter-lg">
       <div v-for="(section,sectionIdx) of userSections" :key="sectionIdx"
-           class="editor-section-row q-gutter-sm q-pb-sm">
+           class="editor-section-row q-gutter-sm q-pb-sm"
+           style="border-top: 1px solid grey"
+      >
         <UserStoryUserCard
             v-for="card of section"
             :key="card.id"
@@ -12,6 +14,7 @@
             :cost="card.cost"
             :background="sectionsColors[sectionIdx-1].indicator"
             @onSplitUserStory="splitUserStory({exercise:$route.params.id, cardId:card.id})"
+            @onDeleteUserStories="onDeleteUserStories({exercise:$route.params.id, cardId:card.id})"
             @onChangeContent="editUserStory({exercise:$route.params.id , cardId: card.id, $event})"
             @onDeleteUserStory="deleteUserStory({exercise:$route.params.id , cardId: card.id, $event})"
         />
@@ -19,7 +22,9 @@
     </div>
     <q-separator vertical/>
     <div class="col-6 q-pa-lg editor-sections-container q-gutter-lg">
-      <div v-for="(section,sectionIdx) of sections" :key="sectionIdx" class="editor-section-row q-gutter-sm q-pb-sm">
+      <div v-for="(section,sectionIdx) of sections" :key="sectionIdx"
+           style="border-top: 1px solid grey"
+           class="editor-section-row q-gutter-sm q-pb-sm">
         <UserStoryCardSolution
             v-for="card of section"
             :key="card.id"
@@ -84,6 +89,7 @@ export default {
     ...mapMutations({
       openUserStoryCard: 'openUserStoryCard',
       closeUserStoryCard: 'closeUserStoryCard',
+      onDeleteUserStories:'onDeleteUserStories',
       setStarting: 'setStarting',
       splitUserStory: 'splitUserStory',
       editUserStory: 'editUserStory',

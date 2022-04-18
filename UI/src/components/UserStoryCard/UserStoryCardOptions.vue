@@ -9,7 +9,7 @@
 
       <q-item clickable v-close-popup dense>
         <q-item-section>
-          <q-item-label>Remove child user stories</q-item-label>
+          <q-item-label @click="$emit('onDeleteUserStories')">Remove child user stories</q-item-label>
         </q-item-section>
       </q-item>
 
