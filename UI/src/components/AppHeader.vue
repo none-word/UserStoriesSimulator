@@ -20,6 +20,9 @@
         <div>
           <show-solution-button/>
         </div>
+        <div>
+          <hint-button/>
+        </div>
       </div>
     </div>
   </q-header>
@@ -31,10 +34,11 @@ import university_logo from '../assets/imgs/UI_LOGO.png'
 import ResetSolutionButton from "components/ResetSolutionButton";
 import ShowSolutionButton from "components/ShowSolutionButton";
 import Navbar from "components/Navbar";
+import HintButton from "components/HintButton";
 
 export default {
   name: "AppHeader",
-  components: {Navbar, ShowSolutionButton, ResetSolutionButton}
+  components: {HintButton, Navbar, ShowSolutionButton, ResetSolutionButton}
 }
 </script>
 

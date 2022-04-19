@@ -22,22 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8128b5c-2263-413c-a1b5-de41d9c45b80" name="Default Changelist" comment="Markup layout and cards">
-      <change afterPath="$PROJECT_DIR$/UI/src/store/userStoriesModule.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/src/utils/utils.js" afterDir="false" />
+    <list default="true" id="c8128b5c-2263-413c-a1b5-de41d9c45b80" name="Default Changelist" comment="final features">
+      <change afterPath="$PROJECT_DIR$/UI/src/components/HintButton.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/UI/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/UI/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/src/components/ResetSolutionButton.vue" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/components/ResetSolutionButton.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/src/components/ShowSolutionButton.vue" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/components/ShowSolutionButton.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/src/components/UserStoryCard/UserStoryCardOptions.vue" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/components/UserStoryCard/UserStoryCardOptions.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/src/components/UserStoryCard/UserStoryCardSolution.vue" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/components/UserStoryCard/UserStoryCardSolution.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/src/components/UserStoryCard/UserStoryUserCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/components/UserStoryCard/UserStoryUserCard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/src/components/AppHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/components/AppHeader.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI/src/components/UserStoryCard/UserstoryCardTemplate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/components/UserStoryCard/UserstoryCardTemplate.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/src/pages/Training.vue" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/pages/Training.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/src/store/userStoryModule/userStoryModule.js" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/store/userStoryModule/userStoryModule.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI/src/userStoriesStorageService.js" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/userStoriesStorageService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/src/utils/userStoryTree.js" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/utils/userStoryTree.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +37,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Vue Single File Component" />
         <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -96,6 +86,7 @@
       <workItem from="1647431505937" duration="3624000" />
       <workItem from="1647879500838" duration="679000" />
       <workItem from="1648732109935" duration="18506000" />
+      <workItem from="1650344576001" duration="1539000" />
     </task>
     <task id="LOCAL-00001" summary="initialized project">
       <created>1646058463381</created>
@@ -166,9 +157,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="478" y="145" width="579" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1650306420058" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1650307536770">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1650345851229">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1650307536770" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1650345851229" />
   </component>
 </project>
