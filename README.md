@@ -1,4 +1,4 @@
-# QuizWebEngine
+# UserStoriesSimulator
 
 ## :wave: About this project
 This is user story simulator - application that helps people practice splitting stories into smaller ones. We have created a web interface where people can solve training exercises. Idea is that user splits story, i. e. applies several strategies, changes description and size of the story. After that he can compare his solution with correct one. Exercises have been written based on the following scheme:![Demo](http://1qtspv2a8qad3nf2xr3pzat3-wpengine.netdna-ssl.com/wp-content/uploads/2020/10/HW-Story-Splitting-Flowchart-Thumbnail.png)
