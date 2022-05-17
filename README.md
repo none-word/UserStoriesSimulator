@@ -18,22 +18,13 @@ This is user story simulator - application that helps people practice splitting 
 
 ## :wrench: Installation
 1. Clone git repository
+2. Execute the following commands
 ```javascript
 $ npm install
 $ npm i -g @quasar/cli
 $ npm init quasar
 $ quasar dev
 ```
-
-## :bookmark_tabs: Requirements
-<!-- Check [Requirements](/documentation/Requirements.md) file to find:
-- Glossary.
-- Stakeholders Roles.
-- User stories.
-- Non-functional requirements. -->
-
-## :movie_camera: Demo
-<!-- ![Demo](/documentation/diagrams/Demo.gif) -->
 
 ## :v: Credits
 This project was done by :
