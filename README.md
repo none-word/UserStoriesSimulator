@@ -10,14 +10,20 @@ This is user story simulator - application that helps people practice splitting 
 
 ## :hotsprings: Frameworks
 - **Front:** Vue.js, quasar
-- **Deploy:** ??, git
+- **Deploy:** surge.sh, git
 
 ## :heavy_exclamation_mark: Prerequisites
-// ToDo
+1. Node.js (14+)
+2. Quasar CLI(1+)
 
 ## :wrench: Installation
 1. Clone git repository
-2. // ToDo
+```javascript
+$ npm install
+$ npm i -g @quasar/cli
+$ npm init quasar
+$ quasar dev
+```
 
 ## :bookmark_tabs: Requirements
 <!-- Check [Requirements](/documentation/Requirements.md) file to find:
